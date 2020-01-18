@@ -9,15 +9,16 @@ header-includes: \usepackage{macros}
 
 
 
-# Function space dependent definition of out-of-distribution
+# Intro
+
+Some nice usage of macros in macros.sty
 
 ## Definitions
 
 - marginal source vs. target distribution on covariates $X$ $\Pxsource, \Pxtarget$
 - we have training set $D_S$ and test set $D_T$
 - support of these marginals $\suppsource = \supp(\Pxsource)$ and correspondingly for $\Pxtarget$
-- Define the Bayes classifier (in function class $\F$) on source distribution as $\fstarsource$
-- Define the sets $\set_0, \set_1$ as the two sets in $\suppsource$ classified as $0, 1$ by $\fstarsource$
+- some more stuff
 
 Example for an equation referenced
 $$ x = 3$$ {#eq:bruch}
@@ -26,13 +27,13 @@ $$ x = 3$$ {#eq:bruch}
 
 - On distributions
   1. $\suppsource \neq \supptarget$
-  2. source and target joint distribution have the same $P(y|x)$ (i.e. we are in the covariate shift setting)
+  2. bla
 - On the hypothesis/function class $\F$
-  1. For any $x \in \set_0$ (or a more structured set), if we change the distribution such that $p(y=1|x) =1$, it would not change the Bayes classifier $\fstarsource$
-  2. Alternatively: the best classifier $D_S$
+  1. we have something
+  2. and more $D_S$
 
 Discussion of Assumptions in [](#sec:ass) and Eq. [](#eq:bruch).
-Let's discuss the assumption on $\F$: This does not allow neural networks that can interpolate everything.
+Let's discuss the assumption on $\F$: Neural networks.
 
 
 Let us now reference a theorem, namely [](#conj:inftrees).
@@ -53,12 +54,12 @@ Table: Demonstration of pipe table syntax.
 |    1  |    1 |     1   |     1  |
 
 
-# Particular instantiation: Spurious correlations
+# Todo
 
-## 2-D example
-...
+Add images/subfigure type stuff. Single images work well, don't know yet about subfigures...
 
-Now I cite [@test]
+## Some subsection
+And text. Now I cite [@test]
 
 Bibliography
 ==============
