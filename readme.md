@@ -9,7 +9,7 @@ You can use pandoc to convert any `.md` file to LaTex or beamer based `.pdf` and
 Relevant files are all in `latex` folder
 
 1. Install the newest `pandoc` and `pandoc-citeproc` version  [here](https://pandoc.org/installing.html#linux). Note: For Linux absolutely use the debian package, do not `sudo apt-get install`
-2. Install `python-pandocfilters` using `pip install` or
+2. Install `python-pandocfilters` using `pip install` or `apt-get install`
 3. For labeling and crossreferencing, use the Python pandoc filters by [Michael Faerber](https://github.com/01mf02/pandocfilters)
 with syntax [here](http://gedenkt.at/blog/scientific-pandoc/)  
   - The only thing you need is to download and copy all python files into a folder which you then refer to in the make file
