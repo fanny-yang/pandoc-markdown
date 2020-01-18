@@ -61,6 +61,6 @@ Add images/subfigure type stuff. Single images work well, don't know yet about s
 ## Some subsection
 And text. Now I cite [@test]
 
-**Bibliography**
+# Bibliography {-}
 :::{#refs}
 :::
