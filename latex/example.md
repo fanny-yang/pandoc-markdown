@@ -3,7 +3,7 @@ pagestyle: plain
 documentclass: article
 bibliography: bib.bib
 numbersections: true
-title: Thoughts on OOD framework
+title: Pandoc to Latex example
 header-includes: \usepackage{macros}
 ---
 
