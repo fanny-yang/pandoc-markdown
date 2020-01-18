@@ -1,0 +1,128 @@
+\usepackage{commath,dsfont,cleveref,nicefrac,tikz,xfrac}
+\usepackage{amsthm, amssymb, amsthm}
+\usepackage{booktabs}
+\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{theorem}{Theorem}
+\newtheorem{example}{Example}
+\newtheorem{assumption}{Assumption}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{proposition}{Proposition}
+
+%%% This part is used by Faerbers pandocfilters
+% center floats
+\makeatletter
+\g@addto@macro\@floatboxreset\centering
+\makeatother
+
+\def\bbE{\mathop{\mathbb{E}}}
+\def\cA{\mathcal{A}}
+\def\cF{\mathcal{F}}
+\def\cG{\mathcal{G}}
+\def\cH{\mathcal{H}}
+\def\cN{\mathcal{N}}
+\def\cO{\mathcal{O}}
+\def\cP{\mathcal{P}}
+\def\cR{\mathcal{R}}
+\def\cS{\mathcal{S}}
+\def\cW{\mathcal{W}}
+\def\tcN{\widetilde{\cN}}
+\def\hy{\hat y}
+\def\tmu{{\widetilde{\mu}}}
+
+\newcommand{\fstarsource}{f^\star_S}
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\set}{S}
+\newcommand{\Pxsource}{\P_S}
+\newcommand{\Pxtarget}{\P_T}
+\newcommand{\supp}{\text{supp}}
+\newcommand{\suppsource}{\supp_S}
+\newcommand{\supptarget}{\supp_T}
+\newcommand{\F}{\mathcal{F}}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\Argmax}{Arg\,max}
+
+\newcommand{\eps}{\ensuremath{\epsilon}}
+\newcommand{\veps}{\ensuremath{\varepsilon}}
+
+\newcommand\poly{\ensuremath{\operatorname{poly}}}
+\newcommand\polylog{\ensuremath{\operatorname{poly\,log}}}
+\newcommand\opt{\ensuremath{\operatorname{OPT}}}
+\newcommand\copt{\ensuremath{c^\star}}
+\newcommand\Copt{\ensuremath{C^\star}}
+\newcommand\Aopt{\ensuremath{A^\star}}
+\newcommand\greedy{\texttt{greedy}\xspace}
+\newcommand\kmpp{\texttt{kmeans++}\xspace}
+\def\bfo{\mathbf{1}}
+\def\bfe{\mathbf{e}}
+\def\be{\mathbf{e}}
+\def\Pr{\mathop{\textup{Pr}}}
+\def\R{\mathbb{R}}
+\def\Z{\mathbb{Z}}
+\def\1{\mathds{1}}
+\def\nf{\nabla f}
+\def\llog{\ell_{\log}}
+\def\Bal{\textsf{Bal}}
+\def\bbLo{\mathbb{L}^{\!\!\log}}
+\newcommand{\ip}[2]{\left\langle #1, #2 \right \rangle}
+\newcommand{\RR}[1]{{\color{red} #1}}
+\newcommand{\GG}[1]{{\color{green!50!black} #1}}
+\newcommand{\BB}[1]{{\color{blue} #1}}
+\def\SPAN{\textup{span}}
+\def\nR{\nabla\cR}
+\def\fB{\mathfrak{B}}
+\def\nL{\nabla{}L}
+\def\hcR{\widehat{\cR}}
+\def\cRz{\cR_{\textup{z}}}
+\def\hcRz{\widehat{\cR}_{\textup{z}}}
+\def\hcRl{\widehat{\cR}_{\ell}}
+\def\cRl{\cR_{\ell}}
+\def\cRg{\cR_{\gamma}}
+\def\hcRg{\widehat{\cR}_{\gamma}}
+\def\conv{\textup{conv}}
+\def\cl{\textup{cl}}
+\def\epi{\textup{epi}}
+\def\dom{\textup{dom}}
+\def\inte{\textup{inte}}
+\def\heta{\hat{\eta}}
+\def\hgamma{\hat{\gamma}}
+\def\hatw{\hat w}
+\def\barw{\bar w}
+\def\barq{\bar q}
+\def\barp{\bar p}
+\def\barh{\bar h}
+\def\baru{\bar u}
+\def\barv{\bar v}
+\def\sgn{\textup{sgn}}
+\def\Risk{\textup{Risk}}
+\def\hRisk{\widehat{\textup{Risk}}}
+\def\tcO{\widetilde{\cO}}
+\def\Comp{\textup{Complexity}}
+\def\Reg{\textup{Reg}}
+\def\URad{\textup{URad}}
+\def\tuF{{\textup{F}}}
+\def\trace{\textup{trace}}
+\def\T{{\scriptscriptstyle\mathsf{T}}}
+\def\rank{\textup{rank}}
+\def\diag{\textup{diag}}
+\def\lbell{\underline{\ell}}
+\def\Lip{\textup{Lip}}
+\def\relu{\sigma_{\textup{r}}}
+\def\img{\textup{im}}
+\def\Var{\textup{Var}}
+\def\hbbE{\widehat{\bbE}}
+\def\URada{\textup{URad}_{|\cdot|}}
+\def\Rad{\textup{Rad}}
+\def\Sh{\textup{Sh}}
+\def\VC{\textup{VC}}
+\def\Act{\textup{Act}}
+\def\tu{{\textup{u}}}
+\def\tF{{\textup{F}}}
+\def\tr{\textup{tr}}
+
+% some md-specific stuff
+\def\BA{\begin{aligned}}
+\def\EA{\end{aligned}}
+
+\newcommand{\VS}[1]{\vspace{#1em}}

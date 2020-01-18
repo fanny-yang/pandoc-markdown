@@ -1,0 +1,103 @@
+<!doctype html>
+<html >
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+
+  <link rel="stylesheet" type="text/css" href="template.css" />
+
+   <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type='text/javascript' src='menu/js/jquery.cookie.js'></script>
+<script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script>
+<script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+<link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+<link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+<link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+
+  <script src="script.js"></script>
+
+    <script src="jquery.sticky-kit.js "></script>
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Fanny Yang" />
+  <title>Pandoc instructions</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="template.css" />
+</head>
+<body>
+
+
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">Pandoc instructions</span>
+      </div>
+    </div>
+  </div>
+    <br>
+  <div class="container">
+    <div class="row">
+            <div id="TOC" class="span3">
+        <div class="well toc">
+
+        <ul>
+        <li><a href="#installation-needs-for-using-pandoc">Installation needs for using pandoc</a>
+        <ul>
+        <li><a href="#for-simple-notes">For simple notes</a></li>
+        <li><a href="#for-beamer">For beamer</a></li>
+        <li><a href="#for-websites">For websites</a></li>
+        </ul></li>
+        <li><a href="#pandoc-syntax-tricks">Pandoc syntax tricks</a></li>
+        </ul>
+
+        </div>
+      </div>
+            <div class="span9">
+            <h1 id="installation-needs-for-using-pandoc">Installation needs for using pandoc</h1>
+            <p>These are instructions that work on Linux Ubuntu and should easily be transferable to Mac.</p>
+            <p>The necessary files can be find in the git repository <a href="https://gitlab.inf.ethz.ch/OU-YANG/pandoc-md-formath">pandoc-md-formath</a></p>
+            <p>You can use pandoc to convert any <code>.md</code> file to LaTex or beamer based <code>.pdf</code> and <code>.html</code></p>
+            <h2 id="for-simple-notes">For simple notes</h2>
+            <p>Steps</p>
+            <ol type="1">
+            <li>Install the newest <code>pandoc</code> and <code>pandoc-citeproc</code> version <a href="https://pandoc.org/installing.html#linux">here</a>. Note: For Linux absolutely use the debian package, do not <code>sudo apt-get install</code></li>
+            <li>Install <code>python-pandocfilters</code> using <code>pip install</code> or</li>
+            <li>For labeling and crossreferencing, use the Python pandoc filters by <a href="https://github.com/01mf02/pandocfilters">Michael Faerber</a> with syntax <a href="http://gedenkt.at/blog/scientific-pandoc/">here</a><br />
+            </li>
+            </ol>
+            <ul>
+            <li>The only thing you need is to download and copy all python files into a folder which you then refer to in the make file</li>
+            <li>For our example the files are already in the <code>pandoc</code> subfolder so you can skip this step</li>
+            <li>If you want to define new environments, you can do so in <code>macros.sty</code> - it includes the header too</li>
+            </ul>
+            <ol start="4" type="1">
+            <li>To convert the <code>.md</code> file into <code>.pdf</code>, go to the console and run</li>
+            </ol>
+            <pre><code>make example.pdf</code></pre>
+            <p>in the console. Alternatively if you have multiple files you can also run</p>
+            <pre><code>make all</code></pre>
+            <p>And voila you can use macros and amsmath environments like you’re used to. For members of the group: Feel free to complete this readme.</p>
+            <h2 id="for-beamer">For beamer</h2>
+            <p>I’m still working on lua filters to make beamer presentations fast. Will upload samples once I have actually made some lecture notes.</p>
+            <h2 id="for-websites">For websites</h2>
+            <p>This readme was converted to html using the makefile in this folder.</p>
+            <h1 id="pandoc-syntax-tricks">Pandoc syntax tricks</h1>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
