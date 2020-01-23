@@ -1,14 +1,18 @@
 # Installation needs for using pandoc
 
-These are instructions that work on Linux Ubuntu and should easily be transferable to Mac.
-
 You can use pandoc to convert any `.md` file to LaTex or beamer based `.pdf` and `.html`
+
+These are instructions that work on Linux Ubuntu and should easily be transferable to Mac. For Windows more of it will probably be done outside the command line. If you run into trouble, the main things to make sure are
+
+- matching versions of the different packages with pandoc
+- paths contain the packages
 
 ## For simple notes in latex
 
 Relevant files are all in `latex` folder
 
 1. Install the newest `pandoc` and `pandoc-citeproc` version  [here](https://pandoc.org/installing.html#linux). Note: For Linux absolutely use the debian package, do not `sudo apt-get install`, it's outdated!
+2. Copy pre-built executable `pandoc-crossref` release corresponding to your pandoc version [available here](https://github.com/lierdakil/pandoc-crossref/releases) to one of the folders in your `path` (determine those folders using: `echo $PATH`)
 2. Install `python-pandocfilters` using `pip install` or `apt-get install` (for Linux)
 3. For labeling and crossreferencing, use the Python pandoc filters by [Michael Faerber](https://github.com/01mf02/pandocfilters)
 with syntax [here](http://gedenkt.at/blog/scientific-pandoc/)  
