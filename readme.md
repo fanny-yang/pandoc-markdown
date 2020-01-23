@@ -2,7 +2,7 @@
 
 You can use pandoc to convert any `.md` file to LaTex or beamer based `.pdf` and `.html`
 
-These are instructions that work on Linux Ubuntu and should easily be transferable to Mac. For Windows more of it will probably be done outside the command line. If you run into trouble, the main things to make sure are
+These are (the simplest, Haskell platform / GHC independent) instructions that work on Linux Ubuntu and should easily be transferable to Mac. For Windows most of it will probably be done outside the command line. If you run into trouble, the main things to make sure are
 
 - matching versions of the different packages with pandoc
 - paths contain the packages
