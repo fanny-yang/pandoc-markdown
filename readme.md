@@ -40,3 +40,7 @@ Relevant files are all in `html` folder.
 This readme can be converted to html using the makefile in that subfolder.  
 
 # Pandoc syntax tricks
+
+## Frequent "mistakes"
+
+When writing formulas in markdown, don't leave a space between formula and last `$`.
