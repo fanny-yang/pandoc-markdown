@@ -43,4 +43,4 @@ This readme can be converted to html using the makefile in that subfolder.
 
 ## Frequent "mistakes"
 
-When writing formulas in markdown like $x=3$, don't leave a space between formula and last `$`. Else $\mathbb{E} $
+When writing formulas in markdown like $x=3$, don't leave a space between formula and last `$`, else it might give a compile error.
