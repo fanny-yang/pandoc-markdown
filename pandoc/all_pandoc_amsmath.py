@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 from pfcompat import toJSONFilters
 from figure import figure
 from listing import listing
