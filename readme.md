@@ -11,15 +11,17 @@ These are (the simplest, Haskell platform / GHC independent) instructions that w
 
 Relevant files are all in `latex` folder
 
+**For Linux**
+
 1. Install the newest `pandoc` and `pandoc-citeproc` version  [here](https://pandoc.org/installing.html#linux). Note: For Linux absolutely use the debian package, do not `sudo apt-get install`, it's outdated!
 2. Copy pre-built executable `pandoc-crossref` release corresponding to your pandoc version [available here](https://github.com/lierdakil/pandoc-crossref/releases) to one of the folders in your `path` (determine those folders using: `echo $PATH`)
-2. Install `python-pandocfilters` using `pip install` or `apt-get install` (for Linux)
-3. For labeling and crossreferencing, use the Python pandoc filters by [Michael Faerber](https://github.com/01mf02/pandocfilters)
+3. Install `python-pandocfilters` using `pip install` or `apt-get install` (for Linux)
+4. For labeling and crossreferencing, use the Python pandoc filters by [Michael Faerber](https://github.com/01mf02/pandocfilters)
 with syntax [here](http://gedenkt.at/blog/scientific-pandoc/)  
   - The only thing you need is to download and copy all python files into a folder which you then refer to in the make file
   - For our example the files are already in the `pandoc` subfolder in this repo so you can skip this step
   - If you want to define new environments, you can do so in `macros.sty` - it includes the header too
-4. To convert the `.md` file into `.pdf`, go to the console and run
+5. To convert the `.md` file into `.pdf`, go to the console and run
 ```
 make example.pdf
 ```
@@ -28,7 +30,15 @@ in the console. Alternatively if you have multiple files you can also run
 make all
 ```
 
-And voila you can use macros and amsmath environments like you're used to. For members of the group: Feel free to complete this readme.
+And voila you can use macros and amsmath environments like you're used to. 
+
+**For Mac**, the following has been reported to work: 
+Optional: `conda create -n your_env python=3.6` and `source activate your_env`
+Then in the command line, type
+1. `conda install pandoc=2.9.1`
+2. `conda install pandoc-crossref`
+3. `conda install python-pandocfilters`
+To replace steps 1-3
 
 ## For beamer
 
