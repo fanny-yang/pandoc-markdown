@@ -34,15 +34,15 @@ And voila you can use macros and amsmath environments like you're used to.
 
 **For Mac**, the following has been reported to work:
 
-Optional: `conda create -n your_env python=3.6` and `source activate your_env`
+Optional: `conda create -n YOUR_ENV python=3.11` and `conda activate YOUR_ENV`
 
 Then in the command line, type
 
-1. `conda install pandoc=2.9.1`
-2. `conda install pandoc-crossref`
-3. `conda install pandocfilters`
+1. `brew install pandoc` 
+2. `brew install pandoc-crossref`
+3. `pip install pandocfilters`
 
-To replace steps 1-3, follow steps 4, 5 in the Linux instructions.
+You should now be done. 
 
 ## For beamer
 
